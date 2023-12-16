@@ -52,9 +52,9 @@ public class main_code {
 		int col = 9;
 		while(col>0) {
 			showBoard(ll.head,col);
-			System.out.println("Add first cards positions which must be between 0-17");
+			System.out.println("Add first cards positions which must be between 0-"+col*2);
 			int p1 = in.nextInt();
-			System.out.println("Add second cards positions which must be between 0-17");
+			System.out.println("Add second cards positions which must be between 0-"+col*2);
 			int p2 = in.nextInt();
 			if(checkMatch(p1,p2,ll.head))col--;
 		}
